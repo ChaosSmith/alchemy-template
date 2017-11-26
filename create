@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from app import db
+from app.db import connect, create, DATABASE
 
-engine = db.connect(None)
-db.create(engine,db.DATABASE)
+engine = connect(None)
+create(engine,DATABASE)

@@ -1,7 +1,7 @@
 # Standard model that others will be copies off of
 
 #imports
-from app.db import DeclarativeBase
+from app.db.base import DeclarativeBase
 from app.db.types import *
 
 class BaseTable(DeclarativeBase):
