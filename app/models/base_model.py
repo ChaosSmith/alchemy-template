@@ -1,7 +1,8 @@
 # Standard model that others will be copies off of
 
 #imports
-from api.db.alchemy import *
+from app.db import DeclarativeBase
+from app.db.types import *
 
 class BaseTable(DeclarativeBase):
 

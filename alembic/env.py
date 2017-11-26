@@ -5,8 +5,8 @@ from logging.config import fileConfig
 import os, sys
 if os.getcwd() not in sys.path:
     sys.path.append(os.getcwd())
-from api.models import DeclarativeBase
-from api.db import DATABASE, connect, parse_url
+from app.db import DeclarativeBase
+from app.db import DATABASE, connect, parse_url
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
